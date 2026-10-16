@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+# Keep the old filename working for anyone who already has the link
+[[redirects]]
+  from = "/topper_s_academy_live_website.html"
+  to = "/"
+  status = 301
+  force = true
