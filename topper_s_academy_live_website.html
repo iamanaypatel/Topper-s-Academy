@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topper's Academy | 4.9★ CBSE, NEET & B.Sc. Coaching in Kanpur</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            royal: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a',
+            },
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 58, 138, 0.90) 100%),
+                  url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+    .card-lift {
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-lift:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- Top Utility & Status Bar -->
+  <div class="bg-royal-950 text-slate-200 text-xs py-2.5 px-4 border-b border-royal-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500 text-slate-950">
+          <i class="fa-solid fa-star mr-1"></i> Est. 2016
+        </span>
+        <span class="font-medium">Admissions Open for Classes 8–12 (CBSE), NEET & B.Sc. Batches!</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-5 text-slate-300">
+        <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>150 Feet Rd, Mangla Vihar 2, Kanpur</span>
+        <span><i class="fa-regular fa-clock text-amber-400 mr-1.5"></i>Mon–Sat: 9:00 AM – 8:00 PM</span>
+        <a href="tel:09454933916" class="text-amber-400 hover:underline font-bold">
+          <i class="fa-solid fa-phone mr-1"></i>094549 33916
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-royal-900/95 backdrop-blur-md text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-extrabold tracking-tight block leading-none">
+              Topper's <span class="text-amber-400">Academy</span>
+            </span>
+            <span class="text-[11px] text-blue-200 tracking-wider uppercase font-semibold block mt-1">
+              Mangla Vihar 2 • Kanpur
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+          <a href="#gallery" class="text-blue-100 hover:text-amber-400 transition-colors">Photos</a>
+          <a href="#courses" class="text-blue-100 hover:text-amber-400 transition-colors">Courses</a>
+          <a href="#batch-calculator" class="text-blue-100 hover:text-amber-400 transition-colors">Batch & Scholarship</a>
+          <a href="#reviews" class="text-blue-100 hover:text-amber-400 transition-colors">4.9★ Reviews</a>
+          <a href="#contact" class="text-blue-100 hover:text-amber-400 transition-colors">Map & Contact</a>
+          <div class="flex items-center gap-2.5 pl-2">
+            <a href="https://wa.me/919454933916?text=Hello%20Topper's%20Academy%2C%20I%20would%20like%20to%20inquire%20about%20admissions%20and%20demo%20classes." target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-3.5 py-2.5 rounded-xl text-xs flex items-center gap-1.5 shadow transition-all">
+              <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+            </a>
+            <a href="#contact" onclick="focusDemoForm()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs shadow transition-all flex items-center gap-1.5">
+              <span>Book Demo</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center gap-2">
+          <a href="tel:09454933916" class="bg-amber-500 text-slate-950 px-3 py-2 rounded-lg text-xs font-bold flex items-center gap-1">
+            <i class="fa-solid fa-phone"></i> Call
+          </a>
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="text-white hover:text-amber-400 p-2 rounded-lg border border-royal-700">
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-royal-950 border-t border-royal-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="#gallery" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-blue-100 hover:bg-royal-800">Google Maps Photo Gallery</a>
+      <a href="#courses" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-blue-100 hover:bg-royal-800">Courses (CBSE, NEET & B.Sc.)</a>
+      <a href="#batch-calculator" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-blue-100 hover:bg-royal-800">Batch & Scholarship Calculator</a>
+      <a href="#reviews" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-blue-100 hover:bg-royal-800">Verified Student Reviews</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-blue-100 hover:bg-royal-800">Live Map & Contact</a>
+      <div class="grid grid-cols-2 gap-2 pt-2">
+        <a href="https://wa.me/919454933916" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 text-slate-950 font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-1.5">
+          <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Now
+        </a>
+        <a href="#contact" onclick="focusDemoForm()" class="mobile-nav-link bg-amber-500 text-slate-950 font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-calendar-check"></i> Book Free Demo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-bg text-white py-16 sm:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <!-- Three Mandatory Badges -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 mb-6">
+            <span class="inline-flex items-center gap-1.5 bg-amber-500/20 border border-amber-400/60 text-amber-300 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm">
+              <i class="fa-solid fa-star text-amber-400"></i> 4.9 ★ Google Rated (25+ Reviews)
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-blue-500/20 border border-blue-400/50 text-blue-100 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+              <i class="fa-solid fa-award text-amber-400"></i> Est. 2016 • CBSE, NEET & B.Sc.
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 border border-emerald-400/50 text-emerald-200 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+              <i class="fa-solid fa-laptop-file text-emerald-400"></i> Online & Onsite Classes
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5">
+            Shaping Toppers in <span class="text-amber-400">Kanpur</span> Since 2016
+          </h1>
+
+          <p class="text-base sm:text-lg text-blue-100/90 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            Result-oriented coaching at <strong class="text-white">150 Feet Rd, near Manas Departmental, Mangla Vihar 2</strong>. Specialized small-batch mentoring for <strong class="text-amber-300">Classes 8–10 (CBSE), Classes 11–12 (PCM, PCB & Commerce), NEET Entrance, and B.Sc. (Physics & Maths)</strong>.
+          </p>
+
+          <!-- Three Primary CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-10">
+            <a href="#contact" onclick="focusDemoForm()" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-7 py-4 rounded-xl shadow-lg shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span>Book a Free Demo Class</span>
+            </a>
+            <a href="tel:09454933916" class="w-full sm:w-auto bg-white/15 hover:bg-white/25 text-white border border-white/30 font-bold px-6 py-4 rounded-xl backdrop-blur-sm transition-all flex items-center justify-center gap-2 text-sm sm:text-base">
+              <i class="fa-solid fa-phone-volume text-amber-400"></i>
+              <span>Call Now: 094549 33916</span>
+            </a>
+            <a href="https://wa.me/919454933916?text=Hello%20Topper's%20Academy%2C%20I%20want%20to%20book%20a%20free%20demo%20class." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-6 py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>WhatsApp Now</span>
+            </a>
+          </div>
+
+          <!-- Key Highlights Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/15 text-left">
+            <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-amber-400">10+ Yrs</div>
+              <div class="text-xs text-blue-200">Academic Trust (Est. 2016)</div>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-white">4.9 / 5 ★</div>
+              <div class="text-xs text-blue-200">25+ Google Reviews</div>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-amber-400">Class 8–B.Sc.</div>
+              <div class="text-xs text-blue-200">Complete Academic Track</div>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-emerald-400">Free Parking</div>
+              <div class="text-xs text-blue-200">Safe Onsite Campus</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Live Centre Info Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-5">
+              <div>
+                <span class="text-xs uppercase tracking-widest text-amber-400 font-bold block">Verified Google Listing</span>
+                <h2 class="text-xl font-extrabold text-white mt-0.5">Topper's Academy Kanpur</h2>
+              </div>
+              <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="bg-white/15 hover:bg-white/25 text-white px-3 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-colors">
+                <i class="fa-solid fa-map-location-dot text-amber-400"></i> Maps
+              </a>
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-amber-400 text-base mt-1 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-white">Address:</div>
+                  <div class="text-blue-100 text-xs sm:text-sm leading-relaxed">
+                    150 Feet Rd, near Manas Departmental, Mangla Vihar 2, Daheli Sujanpur, Kanpur, Uttar Pradesh 208021
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-regular fa-clock text-amber-400 text-base mt-1 shrink-0"></i>
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <span class="font-semibold text-white">Operating Hours:</span>
+                    <span id="hero-open-badge" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                      Mon–Sat: 9 AM – 8 PM
+                    </span>
+                  </div>
+                  <div class="text-blue-100 text-xs mt-1">Monday – Saturday: 9:00 AM – 8:00 PM • Sunday: Closed</div>
+                </div>
+              </div>
+
+              <div class="bg-royal-950/70 rounded-2xl p-4 border border-white/10">
+                <div class="text-amber-400 text-xs font-bold mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-quote-left"></i> Featured Google Review
+                </div>
+                <p class="text-white italic text-sm">"Had my best years here. Excellent teachers!"</p>
+                <div class="text-[11px] text-blue-200 mt-1">★ 4.9/5 Rating across 25+ Student & Parent Reviews</div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between gap-3">
+              <a href="#gallery" class="text-xs font-bold text-amber-300 hover:text-amber-200 flex items-center gap-1.5">
+                <i class="fa-regular fa-images"></i> View / Add Google Maps Photos
+              </a>
+              <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white bg-royal-800 hover:bg-royal-700 px-3.5 py-2 rounded-lg transition-colors">
+                Open Listing <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. INTERACTIVE GOOGLE MAPS PHOTO GALLERY & LIVE PHOTO IMPORTER -->
+  <section id="gallery" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+      <div>
+        <span class="text-royal-900 font-bold text-xs uppercase tracking-widest bg-royal-100 px-3.5 py-1.5 rounded-full">
+          <i class="fa-solid fa-camera-retro mr-1"></i> Campus & Google Maps Visuals
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-royal-900 mt-3">
+          Interactive Photo Gallery
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-1 max-w-2xl">
+          Click any photo to view full-screen, filter by category, or use the live importer to paste original Google Maps photo links (<code class="text-xs bg-slate-200 px-1.5 py-0.5 rounded">lh3.googleusercontent.com</code>) or upload photos from your device.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-sm transition-all">
+          <i class="fa-brands fa-google text-amber-500"></i> View Photos on Google Maps
+        </a>
+        <button onclick="toggleImporterPanel()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <span>+ Add / Replace with Original Google Maps Photos</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Live Photo Importer Panel (Persists to localStorage) -->
+    <div id="photo-importer-panel" class="hidden bg-white border-2 border-dashed border-royal-700 rounded-3xl p-6 sm:p-8 mb-10 shadow-xl">
+      <div class="flex flex-wrap items-start justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
+        <div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-royal-900 flex items-center gap-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-500"></i>
+            Live Google Maps Photo Importer (Auto-Saved in Browser)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            <strong>How to grab original Google Maps links:</strong> Open <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="text-royal-800 underline font-semibold">Topper's Academy on Google Maps</a>, right-click any photo, choose <strong>"Copy Image Address"</strong>, and paste it below—or select downloaded photos directly from your phone/PC.
+          </p>
+        </div>
+        <button onclick="toggleImporterPanel()" class="text-slate-400 hover:text-slate-700 p-1.5 rounded-lg">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div>
+          <label for="import-url" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+            Option 1: Paste Google Maps Image URL
+          </label>
+          <input type="url" id="import-url" placeholder="https://lh3.googleusercontent.com/p/..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-royal-900" />
+          <p class="text-[11px] text-slate-500 mt-1">Supports any direct image address or Google Maps photo URL.</p>
+        </div>
+
+        <div>
+          <label for="import-file" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+            Option 2: Upload Photo(s) from Device
+          </label>
+          <input type="file" id="import-file" accept="image/*" multiple class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs bg-slate-50 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-royal-900 file:text-white hover:file:bg-royal-800" />
+          <p class="text-[11px] text-slate-500 mt-1">Select one or multiple photos saved from Google Maps.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="import-title" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              Photo Caption
+            </label>
+            <input type="text" id="import-title" placeholder="e.g., Classroom Batch" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-royal-900" />
+          </div>
+          <div>
+            <label for="import-category" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              Category
+            </label>
+            <select id="import-category" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-royal-900">
+              <option value="Classrooms">Classrooms</option>
+              <option value="Interactive Batches">Interactive Batches</option>
+              <option value="Centre & Study Area">Centre & Study Area</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-3 mt-6 pt-4 border-t border-slate-100">
+        <div class="flex flex-wrap gap-2.5">
+          <button onclick="handlePhotoImport()" class="bg-royal-900 hover:bg-royal-800 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow flex items-center gap-2 transition-colors">
+            <i class="fa-solid fa-plus"></i> Save & Add Photo to Gallery
+          </button>
+          <button onclick="clearDefaultPhotos()" class="bg-amber-100 hover:bg-amber-200 text-amber-900 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-colors">
+            <i class="fa-solid fa-eraser mr-1"></i> Clear Defaults (Keep Only Mine)
+          </button>
+        </div>
+        <button onclick="resetDefaultGallery()" class="text-xs text-slate-500 hover:text-rose-600 font-semibold underline">
+          Restore Default Gallery Photos
+        </button>
+      </div>
+    </div>
+
+    <!-- Gallery Category Filter Tabs -->
+    <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+      <div class="flex flex-wrap gap-2" id="gallery-filter-tabs">
+        <button onclick="setGalleryCategory('all')" data-cat="all" class="gallery-tab bg-royal-900 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow transition-all">
+          All Photos
+        </button>
+        <button onclick="setGalleryCategory('Classrooms')" data-cat="Classrooms" class="gallery-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition-all">
+          Classrooms
+        </button>
+        <button onclick="setGalleryCategory('Interactive Batches')" data-cat="Interactive Batches" class="gallery-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition-all">
+          Interactive Batches
+        </button>
+        <button onclick="setGalleryCategory('Centre & Study Area')" data-cat="Centre & Study Area" class="gallery-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition-all">
+          Centre & Study Area
+        </button>
+      </div>
+      <span id="gallery-count-badge" class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full">
+        Showing 6 Photos
+      </span>
+    </div>
+
+    <!-- Photo Grid -->
+    <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- 3. COURSES & INTERACTIVE BATCH / SCHOLARSHIP FINDER -->
+  <section id="courses" class="py-16 sm:py-24 bg-slate-100 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-royal-900 font-bold text-xs uppercase tracking-widest bg-royal-100 px-3.5 py-1.5 rounded-full">
+          Est. 2016 • CBSE, NEET & B.Sc.
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-royal-900 mt-3 mb-3">
+          Courses Offered at Topper's Academy
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Both <strong>Onsite Classroom Batches</strong> and <strong>Live Online Classes</strong> with printed study materials, weekly assessments, and 1-on-1 doubt clearing.
+        </p>
+      </div>
+
+      <!-- Course Category Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10">
+        <button onclick="filterCourses('all')" data-cfilter="all" class="course-tab bg-royal-900 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow transition-all">
+          All Courses (4)
+        </button>
+        <button onclick="filterCourses('cbse-8-10')" data-cfilter="cbse-8-10" class="course-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all">
+          Class 8–10 CBSE Foundation
+        </button>
+        <button onclick="filterCourses('class-11-12')" data-cfilter="class-11-12" class="course-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all">
+          Class 11–12 (PCM, PCB & Commerce)
+        </button>
+        <button onclick="filterCourses('neet')" data-cfilter="neet" class="course-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all">
+          NEET Entrance Preparation
+        </button>
+        <button onclick="filterCourses('bsc')" data-cfilter="bsc" class="course-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all">
+          B.Sc. (Physics & Maths)
+        </button>
+      </div>
+
+      <!-- 4 Core Course Cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Course 1: Class 8-10 CBSE Foundation -->
+        <div data-ccat="cbse-8-10" class="course-card card-lift bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-2 bg-amber-500"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">Classes VIII, IX & X</span>
+                <i class="fa-solid fa-Compass-drafting text-royal-900 text-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">Class 8–10 CBSE Foundation</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Strong conceptual foundation in Mathematics, Science & English with NCERT Exemplar mastery and Olympiad readiness.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-5">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Maths, Science, Social Sc. & English</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Weekly Board-Pattern Tests</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Parent SMS Progress Updates</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <button onclick="loadCalculatorPreset('cbse-8-10')" class="text-xs font-bold text-royal-900 hover:text-amber-600">
+              Check Timings
+            </button>
+            <button onclick="selectCourseForDemo('Class 8-10 CBSE Foundation')" class="bg-royal-900 hover:bg-royal-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors">
+              Book Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 2: Class 11-12 (Physics, Chemistry, Maths, Commerce) -->
+        <div data-ccat="class-11-12" class="course-card card-lift bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-2 bg-royal-900"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-blue-100 text-royal-900 text-xs font-bold px-2.5 py-1 rounded-full">Classes XI & XII</span>
+                <i class="fa-solid fa-atom text-royal-900 text-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">Class 11–12 Science & Commerce</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Dedicated batches for Physics, Chemistry, Mathematics, Biology & Commerce (Accounts, Economics, Business Studies).
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-5">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-royal-900"></i> Derivation & Numerical Workbooks</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-royal-900"></i> 10-Year Board PYQ Question Bank</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-royal-900"></i> Daily 1-on-1 Doubt Counters</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <button onclick="loadCalculatorPreset('class-11-12')" class="text-xs font-bold text-royal-900 hover:text-amber-600">
+              Check Timings
+            </button>
+            <button onclick="selectCourseForDemo('Class 11-12 (Physics, Chemistry, Maths, Commerce)')" class="bg-royal-900 hover:bg-royal-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors">
+              Book Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3: NEET Entrance Preparation -->
+        <div data-ccat="neet" class="course-card card-lift bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-2 bg-emerald-500"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">Medical Entrance</span>
+                <i class="fa-solid fa-stethoscope text-emerald-600 text-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">NEET Entrance Preparation</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Target NEET-UG coaching with line-by-line NCERT Biology mastery, fast Physics numericals, and OMR mock test series.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-5">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Physics, Chemistry & NCERT Biology</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Full OMR Mock Tests & Rank Analysis</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> High-Weightage Topic Speed Drills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <button onclick="loadCalculatorPreset('neet')" class="text-xs font-bold text-royal-900 hover:text-amber-600">
+              Check Timings
+            </button>
+            <button onclick="selectCourseForDemo('NEET Entrance Preparation')" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors">
+              Book Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 4: B.Sc. (Physics & Maths) Tutorials -->
+        <div data-ccat="bsc" class="course-card card-lift bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-2 bg-amber-500"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-purple-100 text-purple-900 text-xs font-bold px-2.5 py-1 rounded-full">Higher Education</span>
+                <i class="fa-solid fa-square-root-variable text-purple-700 text-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">B.Sc. (Physics & Maths) Tutorials</h3>
+              <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                Specialized university-level coaching for B.Sc. (1st, 2nd & 3rd Year / Semester) students in Physics and Mathematics.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-5">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-700"></i> CSJMU & University Syllabus Aligned</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-700"></i> Mechanics, Optics, Calculus & Algebra</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-700"></i> Solved University Paper Practice</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <button onclick="loadCalculatorPreset('bsc')" class="text-xs font-bold text-royal-900 hover:text-amber-600">
+              Check Timings
+            </button>
+            <button onclick="selectCourseForDemo('B.Sc. (Physics & Maths) Tutorials')" class="bg-royal-900 hover:bg-royal-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors">
+              Book Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Batch Timing & Scholarship Calculator -->
+      <div id="batch-calculator" class="mt-16 bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden grid lg:grid-cols-12">
+        <div class="lg:col-span-5 bg-royal-900 text-white p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-white/10 px-3 py-1 rounded-full">
+              Interactive Planner
+            </span>
+            <h3 class="text-2xl font-extrabold mt-3 mb-2">
+              Batch Timing & Scholarship Calculator
+            </h3>
+            <p class="text-xs sm:text-sm text-blue-100 mb-6">
+              Select your course and last exam score to view available morning/evening slots and merit scholarship waivers.
+            </p>
+
+            <div class="space-y-5">
+              <div>
+                <label for="calc-course" class="block text-xs font-bold uppercase tracking-wider text-blue-200 mb-1.5">
+                  1. Select Class / Course
+                </label>
+                <select id="calc-course" onchange="updateCalculator()" class="w-full rounded-xl bg-royal-950 border border-royal-700 text-white px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-400">
+                  <option value="cbse-8-10">Class 8–10 CBSE Foundation (Maths & Science)</option>
+                  <option value="class-11-12">Class 11–12 (Physics, Chemistry, Maths)</option>
+                  <option value="commerce-11-12">Class 11–12 Commerce (Accounts, Econ, BST)</option>
+                  <option value="neet">NEET Entrance Preparation (PCB)</option>
+                  <option value="bsc">B.Sc. Tutorials (Physics & Mathematics)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-blue-200 mb-1.5">
+                  2. Preferred Learning Mode
+                </label>
+                <div class="grid grid-cols-2 gap-2.5">
+                  <button type="button" id="mode-onsite" onclick="setLearningMode('Onsite Classroom')" class="bg-amber-500 text-slate-950 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all">
+                    <i class="fa-solid fa-school"></i> Onsite Classroom
+                  </button>
+                  <button type="button" id="mode-online" onclick="setLearningMode('Online Live')" class="bg-royal-950 text-blue-100 border border-royal-700 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 hover:bg-royal-800 transition-all">
+                    <i class="fa-solid fa-video"></i> Online Live
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-1.5">
+                  <label for="calc-score" class="text-xs font-bold uppercase tracking-wider text-blue-200">
+                    3. Last Exam Percentage
+                  </label>
+                  <span id="calc-score-badge" class="bg-amber-500 text-slate-950 font-extrabold text-xs px-2.5 py-0.5 rounded-lg">
+                    86% Score
+                  </span>
+                </div>
+                <input type="range" id="calc-score" min="60" max="98" value="86" oninput="updateCalculator()" class="w-full accent-amber-500 cursor-pointer h-2 bg-royal-950 rounded-lg" />
+                <div class="flex justify-between text-[11px] text-blue-300 mt-1">
+                  <span>60%</span>
+                  <span>75%</span>
+                  <span>85%</span>
+                  <span>95%+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/15 text-xs text-blue-200 flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span>Additional scholarship available via on-spot diagnostic test at our Mangla Vihar 2 centre.</span>
+          </div>
+        </div>
+
+        <!-- Calculator Output Panel -->
+        <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100">
+              <div>
+                <span id="calc-out-mode" class="text-xs font-bold uppercase tracking-wider bg-royal-100 text-royal-900 px-3 py-1 rounded-full">
+                  Onsite Classroom • Mangla Vihar 2
+                </span>
+                <h4 id="calc-out-title" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">
+                  Class 8–10 CBSE Foundation Batch
+                </h4>
+              </div>
+              <div class="bg-emerald-50 border border-emerald-200 rounded-2xl px-4 py-2.5 text-right">
+                <div class="text-[11px] font-semibold text-emerald-800 uppercase">Scholarship Eligibility</div>
+                <div id="calc-out-scholarship" class="text-xl font-extrabold text-emerald-700">15% Fee Waiver</div>
+                <div id="calc-out-code" class="text-[11px] text-emerald-600 font-medium">Code: TOPPER15</div>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 my-6">
+              <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+                <div class="text-xs font-bold text-royal-900 uppercase mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-sun text-amber-500"></i> Morning / Day Batch Slot
+                </div>
+                <div id="calc-out-morning" class="text-sm sm:text-base font-extrabold text-slate-900">
+                  9:30 AM – 11:30 AM (Mon–Sat)
+                </div>
+                <p class="text-xs text-slate-500 mt-1">Ideal for B.Sc., Droppers & Morning Study</p>
+              </div>
+
+              <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+                <div class="text-xs font-bold text-royal-900 uppercase mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-moon text-royal-900"></i> After-School Evening Slot
+                </div>
+                <div id="calc-out-evening" class="text-sm sm:text-base font-extrabold text-slate-900">
+                  4:00 PM – 6:15 PM (Mon–Sat)
+                </div>
+                <p class="text-xs text-slate-500 mt-1">Includes daily 20-min doubt clearing counter</p>
+              </div>
+            </div>
+
+            <div class="bg-amber-50/70 border border-amber-200 rounded-2xl p-4 mb-6">
+              <div class="text-xs font-bold text-amber-900 uppercase mb-2">Included in Your Batch Package:</div>
+              <div id="calc-out-features" class="grid sm:grid-cols-2 gap-2 text-xs text-slate-700">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-100">
+            <button onclick="applyCalculatorToForm()" class="flex-1 bg-royal-900 hover:bg-royal-800 text-white font-bold py-3.5 px-5 rounded-xl text-xs sm:text-sm shadow transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-check text-amber-400"></i>
+              <span>Lock Scholarship & Book Free Demo</span>
+            </button>
+            <button onclick="sendCalculatorToWhatsApp()" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3.5 px-5 rounded-xl text-xs sm:text-sm shadow transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Claim on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VERIFIED GOOGLE REVIEWS SECTION -->
+  <section id="reviews" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-8 items-center mb-12">
+      <!-- Left: 4.9/5 Rating Breakdown Card -->
+      <div class="lg:col-span-5 bg-royal-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <span class="bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase">
+            Verified Google Rating
+          </span>
+          <i class="fa-brands fa-google text-2xl text-amber-400"></i>
+        </div>
+
+        <div class="flex items-baseline gap-4 my-4">
+          <div class="text-5xl sm:text-6xl font-extrabold text-amber-400">4.9</div>
+          <div>
+            <div class="text-amber-400 text-lg">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="text-xs sm:text-sm text-blue-200 mt-1">Based on 25+ Verified Google Reviews</div>
+          </div>
+        </div>
+
+        <!-- Star Progress Bars -->
+        <div class="space-y-2 text-xs my-6">
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-blue-200 font-semibold">5 Star</span>
+            <div class="flex-1 h-2.5 bg-royal-950 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full rounded-full" style="width: 92%"></div>
+            </div>
+            <span class="w-8 text-right font-bold">92%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-blue-200 font-semibold">4 Star</span>
+            <div class="flex-1 h-2.5 bg-royal-950 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full rounded-full" style="width: 8%"></div>
+            </div>
+            <span class="w-8 text-right font-bold">8%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-blue-200 font-semibold">3 Star</span>
+            <div class="flex-1 h-2.5 bg-royal-950 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full rounded-full" style="width: 0%"></div>
+            </div>
+            <span class="w-8 text-right font-bold">0%</span>
+          </div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="w-full bg-white hover:bg-amber-400 text-slate-950 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>Read All Reviews on Google Maps</span>
+        </a>
+      </div>
+
+      <!-- Right: Featured Quote & Review Cards -->
+      <div class="lg:col-span-7 space-y-6">
+        <!-- Featured Real Sentiment Banner -->
+        <div class="bg-amber-50 border-2 border-amber-300 rounded-3xl p-6 sm:p-8 relative">
+          <i class="fa-solid fa-quote-right text-4xl text-amber-300/60 absolute top-5 right-6"></i>
+          <div class="flex items-center gap-1 text-amber-500 text-sm mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-xs font-bold text-amber-900 ml-2">Highlighted Google Maps Review</span>
+          </div>
+          <blockquote class="text-xl sm:text-2xl font-extrabold text-royal-900 italic mb-3">
+            "Had my best years here. Excellent teachers!"
+          </blockquote>
+          <p class="text-xs sm:text-sm text-slate-600">
+            — Verified Student on Google Maps • Topper's Academy, Mangla Vihar 2, Kanpur
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="text-amber-500 text-xs mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic mb-3">
+              "Best coaching in Mangla Vihar 2 for Physics, Chemistry, and Maths. Small batches mean sir clears every numerical doubt personally."
+            </p>
+            <div class="text-xs font-bold text-slate-900">Class 12 CBSE & NEET Aspirant</div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="text-amber-500 text-xs mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic mb-3">
+              "Very supportive faculty for B.Sc. Mathematics and Physics as well as Class 10 CBSE foundation. Weekly tests keep students disciplined."
+            </p>
+            <div class="text-xs font-bold text-slate-900">Verified Student & Parent Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. LIVE EMBEDDED GOOGLE MAP & CONTACT / DEMO FORM SECTION -->
+  <section id="contact" class="py-16 sm:py-24 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-royal-900 font-bold text-xs uppercase tracking-widest bg-royal-100 px-3.5 py-1.5 rounded-full">
+          Visit or Inquire Now
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-royal-900 mt-3 mb-3">
+          Live Location & Free Demo Booking
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Located on <strong>150 Feet Rd, near Manas Departmental, Mangla Vihar 2, Daheli Sujanpur, Kanpur (208021)</strong>. Book your demo below or send your inquiry straight to our WhatsApp.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Left Column: Live Embedded Google Map + Contact Card -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+            <!-- Responsive Embedded Google Map Iframe -->
+            <div class="w-full h-72 sm:h-80 bg-slate-200 relative">
+              <iframe
+                title="Topper's Academy Kanpur Google Map"
+                src="https://maps.google.com/maps?q=Topper's%20Academy%2C%20150%20Feet%20Rd%2C%20Mangla%20Vihar%202%2C%20Daheli%20Sujanpur%2C%20Kanpur%2C%20Uttar%20Pradesh%20208021&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="p-6 sm:p-7">
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                <div>
+                  <h3 class="text-lg font-extrabold text-royal-900">Topper's Academy, Kanpur</h3>
+                  <p class="text-xs text-slate-500">Free On-Site & Street Parking Available</p>
+                </div>
+                <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow transition-all">
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span>Get Directions on Google Maps</span>
+                </a>
+              </div>
+
+              <div class="space-y-3 text-xs sm:text-sm text-slate-700 pt-3 border-t border-slate-100">
+                <div class="flex items-start justify-between gap-3">
+                  <span><i class="fa-solid fa-location-dot text-royal-900 mr-2"></i>150 Feet Rd, near Manas Departmental, Mangla Vihar 2, Daheli Sujanpur, Kanpur, UP 208021</span>
+                  <button onclick="copyToClipboard('150 Feet Rd, near Manas Departmental, Mangla Vihar 2, Daheli Sujanpur, Kanpur, Uttar Pradesh 208021', 'Address copied!')" class="text-royal-900 hover:text-amber-600 font-bold shrink-0">
+                    Copy
+                  </button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span><i class="fa-solid fa-phone text-royal-900 mr-2"></i><strong>Phone:</strong> <a href="tel:09454933916" class="text-royal-900 font-extrabold hover:underline">094549 33916</a></span>
+                  <button onclick="copyToClipboard('09454933916', 'Phone number copied!')" class="text-royal-900 hover:text-amber-600 font-bold">
+                    Copy
+                  </button>
+                </div>
+                <div>
+                  <i class="fa-regular fa-clock text-royal-900 mr-2"></i><strong>Hours:</strong> Mon–Sat: 9:00 AM – 8:00 PM • Sun: Closed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Demo Class & WhatsApp Inquiry Form -->
+        <div class="lg:col-span-6">
+          <div id="demo-booking-card" class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 transition-all">
+            <h3 class="text-2xl font-extrabold text-royal-900 mb-1">Book a Free Demo Class</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-6">
+              Register your slot online or send your details directly via WhatsApp to <strong>094549 33916</strong>.
+            </p>
+
+            <form id="demo-form" onsubmit="submitDemoInquiry(event)" novalidate class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+                    Student Full Name *
+                  </label>
+                  <input type="text" id="form-name" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-royal-900" />
+                  <p id="err-form-name" class="hidden text-xs text-rose-600 mt-1">Please enter student name.</p>
+                </div>
+
+                <div>
+                  <label for="form-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+                    Mobile / WhatsApp No. *
+                  </label>
+                  <input type="tel" id="form-phone" required maxlength="10" placeholder="10-digit number" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-royal-900" />
+                  <p id="err-form-phone" class="hidden text-xs text-rose-600 mt-1">Enter a valid 10-digit mobile number.</p>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-course" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+                    Select Class / Course *
+                  </label>
+                  <select id="form-course" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-royal-900">
+                    <option value="" disabled selected>Choose Course</option>
+                    <option value="Class 8-10 CBSE Foundation">Class 8–10 CBSE Foundation</option>
+                    <option value="Class 11-12 (Physics, Chemistry, Maths, Commerce)">Class 11–12 (PCM / PCB / Commerce)</option>
+                    <option value="NEET Entrance Preparation">NEET Entrance Preparation</option>
+                    <option value="B.Sc. (Physics & Maths) Tutorials">B.Sc. (Physics & Maths) Tutorials</option>
+                  </select>
+                  <p id="err-form-course" class="hidden text-xs text-rose-600 mt-1">Please choose a course.</p>
+                </div>
+
+                <div>
+                  <label for="form-mode" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+                    Class Mode & Timing
+                  </label>
+                  <select id="form-mode" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-royal-900">
+                    <option value="Onsite Classroom (Evening Batch)">Onsite Classroom (Evening Batch)</option>
+                    <option value="Onsite Classroom (Morning Batch)">Onsite Classroom (Morning Batch)</option>
+                    <option value="Online Live Interactive Batch">Online Live Interactive Batch</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-notes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+                  Subjects / Scholarship Code / Questions
+                </label>
+                <textarea id="form-notes" rows="2" placeholder="Mention specific subjects (e.g., Physics, Maths, Accounts) or scholarship code..." class="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-royal-900"></textarea>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-3 pt-2">
+                <button type="submit" class="w-full bg-royal-900 hover:bg-royal-800 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+                  <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                  <span>Submit Demo Request</span>
+                </button>
+                <button type="button" onclick="sendFormViaWhatsApp()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-royal-950 text-slate-400 py-10 border-t border-royal-900 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>
+        <span class="font-extrabold text-white">Topper's <span class="text-amber-400">Academy</span></span> • Est. 2016 • 150 Feet Rd, near Manas Departmental, Mangla Vihar 2, Kanpur, UP 208021
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:09454933916" class="text-amber-400 font-bold hover:underline"><i class="fa-solid fa-phone mr-1"></i>094549 33916</a>
+        <a href="https://maps.app.goo.gl/47mLsBMZPThLDhfz6" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white underline">Google Maps</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Gallery Photos -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl relative">
+      <div class="bg-slate-950 flex items-center justify-center relative max-h-[70vh]">
+        <img id="lightbox-img" src="" alt="Campus view" class="max-h-[70vh] w-auto object-contain" />
+        <button onclick="closeLightbox()" aria-label="Close Lightbox" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div class="p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span id="lightbox-cat" class="text-xs font-bold uppercase tracking-wider bg-royal-100 text-royal-900 px-2.5 py-1 rounded-full"></span>
+          <h4 id="lightbox-caption" class="text-lg font-extrabold text-slate-900 mt-1"></h4>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="stepLightbox(-1)" class="px-3.5 py-2 rounded-xl border border-slate-300 text-xs font-bold hover:bg-slate-100">
+            <i class="fa-solid fa-chevron-left mr-1"></i> Prev
+          </button>
+          <button onclick="stepLightbox(1)" class="px-3.5 py-2 rounded-xl border border-slate-300 text-xs font-bold hover:bg-slate-100">
+            Next <i class="fa-solid fa-chevron-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal for Demo Booking -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl text-center">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto mb-4">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-royal-900 mb-2">Inquiry Registered!</h3>
+      <p class="text-xs sm:text-sm text-slate-600 mb-5">
+        Thank you, <strong id="modal-student-name" class="text-slate-900"></strong>! Topper's Academy will call you on <strong id="modal-student-phone" class="text-royal-900"></strong> to confirm your demo session.
+      </p>
+      <div class="bg-slate-50 rounded-2xl p-4 text-left text-xs space-y-1.5 border border-slate-200 mb-6">
+        <div class="flex justify-between"><span class="text-slate-500">Course:</span><span id="modal-student-course" class="font-bold text-slate-900"></span></div>
+        <div class="flex justify-between"><span class="text-slate-500">Mode/Batch:</span><span id="modal-student-mode" class="font-semibold text-slate-800"></span></div>
+        <div class="flex justify-between"><span class="text-slate-500">Helpline:</span><span class="font-bold text-royal-900">094549 33916</span></div>
+      </div>
+      <button onclick="document.getElementById('booking-modal').classList.add('hidden')" class="w-full bg-royal-900 hover:bg-royal-800 text-white font-bold py-3 rounded-xl text-sm">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden bg-slate-900 text-white px-4 py-3 rounded-xl shadow-xl border border-slate-700 flex items-center gap-2.5 text-xs sm:text-sm">
+    <i class="fa-solid fa-circle-check text-amber-400"></i>
+    <span id="toast-text">Action completed!</span>
+  </div>
+
+  <!-- Application Script -->
+  <script>
+    // Mobile Navigation Drawer
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileIcon = document.getElementById('mobile-menu-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileIcon.classList.toggle('fa-bars');
+      mobileIcon.classList.toggle('fa-xmark');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileIcon.classList.add('fa-bars');
+        mobileIcon.classList.remove('fa-xmark');
+      });
+    });
+
+    // =========================================================================
+    // 2. GOOGLE MAPS PHOTO GALLERY & LOCALSTORAGE LIVE PHOTO IMPORTER
+    // =========================================================================
+    const STORAGE_KEY = 'toppers_academy_kanpur_photos_v1';
+
+    const defaultGalleryPhotos = [
+      {
+        src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80",
+        title: "Focused Classroom Setup – Mangla Vihar 2 Centre",
+        category: "Classrooms"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80",
+        title: "Interactive Physics & Mathematics Lecture Session",
+        category: "Interactive Batches"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=900&q=80",
+        title: "Small-Batch Personalized Doubt Clearing",
+        category: "Interactive Batches"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80",
+        title: "Weekly CBSE Board & NEET OMR Assessment",
+        category: "Centre & Study Area"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80",
+        title: "Board & B.Sc. Concept Problem-Solving Session",
+        category: "Classrooms"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        title: "Curated Study Material, Notes & PYQ Library",
+        category: "Centre & Study Area"
+      }
+    ];
+
+    let galleryPhotos = [];
+    let currentGalleryCat = 'all';
+    let currentLightboxIndex = 0;
+
+    function loadGalleryFromStorage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            galleryPhotos = parsed;
+            return;
+          }
+        }
+      } catch (e) {
+        // Fallback if storage is restricted
+      }
+      galleryPhotos = [...defaultGalleryPhotos];
+    }
+
+    function saveGalleryToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(galleryPhotos));
+      } catch (e) {
+        showToast('Saved for current session (file size limit reached).');
+      }
+    }
+
+    function getFilteredPhotos() {
+      return currentGalleryCat === 'all'
+        ? galleryPhotos
+        : galleryPhotos.filter(p => p.category === currentGalleryCat);
+    }
+
+    function renderGallery() {
+      const grid = document.getElementById('gallery-grid');
+      const countBadge = document.getElementById('gallery-count-badge');
+      const filtered = getFilteredPhotos();
+
+      countBadge.textContent = `Showing ${filtered.length} Photo${filtered.length === 1 ? '' : 's'}`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full bg-white rounded-3xl p-10 text-center border border-slate-200">
+            <i class="fa-regular fa-images text-4xl text-slate-400 mb-3"></i>
+            <h4 class="text-lg font-bold text-slate-800">No photos in this category yet</h4>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4">Click "+ Add / Replace with Original Google Maps Photos" above to paste a Google Maps image link or upload from your device.</p>
+            <button onclick="resetDefaultGallery()" class="bg-royal-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl">Restore Default Photos</button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((item, idx) => `
+        <div onclick="openLightbox(${idx})" class="card-lift bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer group">
+          <div class="relative h-56 overflow-hidden bg-slate-100">
+            <img
+              src="${item.src}"
+              alt="${item.title}"
+              onerror="this.onerror=null;this.src='https://placehold.co/800x500/1e3a8a/fbbf24?text=Topper%27s+Academy+Kanpur';"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span class="absolute top-3 left-3 bg-royal-900/90 backdrop-blur-sm text-amber-400 text-[11px] font-bold px-3 py-1 rounded-full">
+              ${item.category}
+            </span>
+            <div class="absolute inset-0 bg-royal-950/0 group-hover:bg-royal-950/30 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 text-xs font-bold px-3.5 py-2 rounded-xl shadow transition-opacity">
+                <i class="fa-solid fa-expand mr-1"></i> View Full Photo
+              </span>
+            </div>
+          </div>
+          <div class="p-4 flex items-center justify-between gap-2">
+            <h4 class="text-sm font-bold text-slate-900 truncate">${item.title}</h4>
+            <i class="fa-solid fa-magnifying-glass-plus text-slate-400 group-hover:text-royal-900 text-sm shrink-0"></i>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function setGalleryCategory(cat) {
+      currentGalleryCat = cat;
+      document.querySelectorAll('.gallery-tab').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'gallery-tab bg-royal-900 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow transition-all';
+        } else {
+          btn.className = 'gallery-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition-all';
+        }
+      });
+      renderGallery();
+    }
+
+    function toggleImporterPanel() {
+      const panel = document.getElementById('photo-importer-panel');
+      panel.classList.toggle('hidden');
+    }
+
+    function handlePhotoImport() {
+      const urlInput = document.getElementById('import-url');
+      const fileInput = document.getElementById('import-file');
+      const titleInput = document.getElementById('import-title');
+      const catInput = document.getElementById('import-category');
+
+      const baseTitle = titleInput.value.trim() || "Topper's Academy Kanpur (Google Maps Photo)";
+      const category = catInput.value;
+
+      if (fileInput.files && fileInput.files.length > 0) {
+        const files = Array.from(fileInput.files);
+        let loadedCount = 0;
+        files.forEach((file, index) => {
+          const reader = new FileReader();
+          reader.onload = function(evt) {
+            const caption = files.length > 1 ? `${baseTitle} (${index + 1})` : baseTitle;
+            galleryPhotos.unshift({
+              src: evt.target.result,
+              title: caption,
+              category: category
+            });
+            loadedCount++;
+            if (loadedCount === files.length) {
+              saveGalleryToStorage();
+              renderGallery();
+              fileInput.value = '';
+              titleInput.value = '';
+              showToast(`${files.length} photo(s) added and saved!`);
+            }
+          };
+          reader.readAsDataURL(file);
+        });
+      } else if (urlInput.value.trim()) {
+        galleryPhotos.unshift({
+          src: urlInput.value.trim(),
+          title: baseTitle,
+          category: category
+        });
+        saveGalleryToStorage();
+        renderGallery();
+        urlInput.value = '';
+        titleInput.value = '';
+        showToast('Google Maps photo URL added and saved!');
+      } else {
+        showToast('Please paste a Google Maps image URL or select a file.');
+      }
+    }
+
+    function clearDefaultPhotos() {
+      galleryPhotos = [];
+      saveGalleryToStorage();
+      renderGallery();
+      showToast('Default photos cleared! Add your original Google Maps photos above.');
+    }
+
+    function resetDefaultGallery() {
+      galleryPhotos = [...defaultGalleryPhotos];
+      saveGalleryToStorage();
+      setGalleryCategory('all');
+      showToast('Default gallery restored!');
+    }
+
+    function openLightbox(index) {
+      const filtered = getFilteredPhotos();
+      if (!filtered[index]) return;
+      currentLightboxIndex = index;
+      updateLightboxView();
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+    }
+
+    function updateLightboxView() {
+      const filtered = getFilteredPhotos();
+      const item = filtered[currentLightboxIndex];
+      if (!item) return;
+      document.getElementById('lightbox-img').src = item.src;
+      document.getElementById('lightbox-cat').textContent = item.category;
+      document.getElementById('lightbox-caption').textContent = item.title;
+    }
+
+    function stepLightbox(direction) {
+      const filtered = getFilteredPhotos();
+      if (filtered.length === 0) return;
+      currentLightboxIndex = (currentLightboxIndex + direction + filtered.length) % filtered.length;
+      updateLightboxView();
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+    }
+
+    // =========================================================================
+    // 3. COURSES FILTER & BATCH / SCHOLARSHIP CALCULATOR
+    // =========================================================================
+    function filterCourses(filterKey) {
+      document.querySelectorAll('.course-tab').forEach(btn => {
+        if (btn.dataset.cfilter === filterKey) {
+          btn.className = 'course-tab bg-royal-900 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow transition-all';
+        } else {
+          btn.className = 'course-tab bg-white hover:bg-royal-50 text-slate-700 border border-slate-300 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all';
+        }
+      });
+
+      document.querySelectorAll('.course-card').forEach(card => {
+        if (filterKey === 'all' || card.dataset.ccat === filterKey) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    let selectedLearningMode = 'Onsite Classroom';
+
+    const calculatorData = {
+      'cbse-8-10': {
+        title: 'Class 8–10 CBSE Foundation Batch',
+        formCourse: 'Class 8-10 CBSE Foundation',
+        morning: '9:30 AM – 11:30 AM (Mon–Sat)',
+        evening: '4:00 PM – 6:00 PM (Mon–Sat)',
+        features: [
+          'Complete CBSE Maths, Science & English',
+          'Weekly Board Pattern & OMR Tests',
+          'NCERT Exemplar + Formula Booklets',
+          'Direct Parent SMS Attendance & Marks Report'
+        ]
+      },
+      'class-11-12': {
+        title: 'Class 11–12 Science (PCM / PCB) Batch',
+        formCourse: 'Class 11-12 (Physics, Chemistry, Maths, Commerce)',
+        morning: '9:00 AM – 11:30 AM (Mon–Sat)',
+        evening: '4:30 PM – 7:00 PM (Mon–Sat)',
+        features: [
+          'Physics, Chemistry & Mathematics / Biology',
+          '10-Year Chapter-Wise Board PYQ Bank',
+          'Numerical & Derivation Practice Sheets',
+          'Daily 1-on-1 Doubt Clearing Counter'
+        ]
+      },
+      'commerce-11-12': {
+        title: 'Class 11–12 Commerce Stream Batch',
+        formCourse: 'Class 11-12 (Physics, Chemistry, Maths, Commerce)',
+        morning: '10:30 AM – 12:30 PM (Mon–Sat)',
+        evening: '5:00 PM – 7:00 PM (Mon–Sat)',
+        features: [
+          'Accountancy, Economics & Business Studies',
+          'Balance Sheet & Case-Study Drills',
+          'Board Sample Paper & Speed Practice',
+          'CUET Domain Preparation Alignment'
+        ]
+      },
+      'neet': {
+        title: 'NEET-UG Medical Entrance Target Batch',
+        formCourse: 'NEET Entrance Preparation',
+        morning: '9:00 AM – 12:30 PM (Mon–Sat)',
+        evening: '4:30 PM – 8:00 PM (Mon–Sat)',
+        features: [
+          'Line-by-Line NCERT Biology Mastery',
+          'Fast Physics & Chemistry Numerical Tricks',
+          'Bi-Weekly Full OMR Test Series & Rank Card',
+          'Personal Mentor & Error Analysis Log'
+        ]
+      },
+      'bsc': {
+        title: 'B.Sc. (Physics & Mathematics) Tutorials',
+        formCourse: 'B.Sc. (Physics & Maths) Tutorials',
+        morning: '9:00 AM – 11:00 AM (Mon–Sat)',
+        evening: '6:00 PM – 8:00 PM (Mon–Sat)',
+        features: [
+          'University Syllabus Physics & Mathematics',
+          'Semester Wise Theorem & Derivation Notes',
+          'Previous 10-Year University Paper Solutions',
+          'Both Online & Onsite Batch Flexibility'
+        ]
+      }
+    };
+
+    function setLearningMode(mode) {
+      selectedLearningMode = mode;
+      const onsiteBtn = document.getElementById('mode-onsite');
+      const onlineBtn = document.getElementById('mode-online');
+
+      if (mode === 'Onsite Classroom') {
+        onsiteBtn.className = 'bg-amber-500 text-slate-950 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all';
+        onlineBtn.className = 'bg-royal-950 text-blue-100 border border-royal-700 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 hover:bg-royal-800 transition-all';
+      } else {
+        onlineBtn.className = 'bg-amber-500 text-slate-950 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all';
+        onsiteBtn.className = 'bg-royal-950 text-blue-100 border border-royal-700 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 hover:bg-royal-800 transition-all';
+      }
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const courseKey = document.getElementById('calc-course').value;
+      const score = parseInt(document.getElementById('calc-score').value, 10);
+      const info = calculatorData[courseKey];
+
+      document.getElementById('calc-score-badge').textContent = `${score}% Score`;
+
+      let waiver = 5;
+      let code = 'TOPPER05';
+      if (score >= 95) { waiver = 25; code = 'TOPPER25'; }
+      else if (score >= 90) { waiver = 20; code = 'TOPPER20'; }
+      else if (score >= 85) { waiver = 15; code = 'TOPPER15'; }
+      else if (score >= 75) { waiver = 10; code = 'TOPPER10'; }
+
+      document.getElementById('calc-out-mode').textContent = `${selectedLearningMode} • Mangla Vihar 2`;
+      document.getElementById('calc-out-title').textContent = info.title;
+      document.getElementById('calc-out-scholarship').textContent = `${waiver}% Fee Waiver`;
+      document.getElementById('calc-out-code').textContent = `Scholarship Code: ${code}`;
+      document.getElementById('calc-out-morning').textContent = info.morning;
+      document.getElementById('calc-out-evening').textContent = info.evening;
+
+      const featContainer = document.getElementById('calc-out-features');
+      featContainer.innerHTML = info.features.map(f => `
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-amber-500"></i>
+          <span>${f}</span>
+        </div>
+      `).join('');
+    }
+
+    function loadCalculatorPreset(courseKey) {
+      document.getElementById('calc-course').value = courseKey;
+      updateCalculator();
+      document.getElementById('batch-calculator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function applyCalculatorToForm() {
+      const courseKey = document.getElementById('calc-course').value;
+      const score = document.getElementById('calc-score').value;
+      const scholarshipText = document.getElementById('calc-out-scholarship').textContent;
+      const codeText = document.getElementById('calc-out-code').textContent;
+      const info = calculatorData[courseKey];
+
+      document.getElementById('form-course').value = info.formCourse;
+      document.getElementById('form-notes').value = `Last Exam Score: ${score}% | Eligible for ${scholarshipText} (${codeText}) | Mode: ${selectedLearningMode}`;
+      focusDemoForm();
+    }
+
+    function sendCalculatorToWhatsApp() {
+      const courseKey = document.getElementById('calc-course').value;
+      const score = document.getElementById('calc-score').value;
+      const scholarshipText = document.getElementById('calc-out-scholarship').textContent;
+      const info = calculatorData[courseKey];
+
+      const msg = `Hello Topper's Academy Kanpur! I checked the Batch & Scholarship Calculator on your website.\n\n• Course: ${info.title}\n• Preferred Mode: ${selectedLearningMode}\n• Last Exam Percentage: ${score}%\n• Scholarship Eligibility: ${scholarshipText}\n\nPlease share batch details and book my free demo class.`;
+      window.open(`https://wa.me/919454933916?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // =========================================================================
+    // 5. DEMO BOOKING FORM & WHATSAPP INTEGRATION
+    // =========================================================================
+    function selectCourseForDemo(courseTitle) {
+      document.getElementById('form-course').value = courseTitle;
+      focusDemoForm();
+    }
+
+    function focusDemoForm() {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      const card = document.getElementById('demo-booking-card');
+      card.classList.add('ring-4', 'ring-amber-400');
+      setTimeout(() => {
+        document.getElementById('form-name').focus();
+      }, 500);
+      setTimeout(() => {
+        card.classList.remove('ring-4', 'ring-amber-400');
+      }, 2400);
+    }
+
+    function validateDemoForm() {
+      const nameEl = document.getElementById('form-name');
+      const phoneEl = document.getElementById('form-phone');
+      const courseEl = document.getElementById('form-course');
+
+      let valid = true;
+
+      if (nameEl.value.trim().length < 2) {
+        document.getElementById('err-form-name').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('err-form-name').classList.add('hidden');
+      }
+
+      const cleanPhone = phoneEl.value.replace(/\D/g, '');
+      if (cleanPhone.length < 10) {
+        document.getElementById('err-form-phone').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('err-form-phone').classList.add('hidden');
+      }
+
+      if (!courseEl.value) {
+        document.getElementById('err-form-course').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('err-form-course').classList.add('hidden');
+      }
+
+      return valid ? {
+        name: nameEl.value.trim(),
+        phone: cleanPhone,
+        course: courseEl.value,
+        mode: document.getElementById('form-mode').value,
+        notes: document.getElementById('form-notes').value.trim()
+      } : null;
+    }
+
+    function submitDemoInquiry(event) {
+      event.preventDefault();
+      const data = validateDemoForm();
+      if (!data) return;
+
+      document.getElementById('modal-student-name').textContent = data.name;
+      document.getElementById('modal-student-phone').textContent = data.phone;
+      document.getElementById('modal-student-course').textContent = data.course;
+      document.getElementById('modal-student-mode').textContent = data.mode;
+
+      document.getElementById('booking-modal').classList.remove('hidden');
+      showToast('Demo class request submitted!');
+      event.target.reset();
+    }
+
+    function sendFormViaWhatsApp() {
+      const data = validateDemoForm();
+      if (!data) {
+        showToast('Please fill in Name, 10-digit Phone & Course first.');
+        return;
+      }
+      const text = `Hello Topper's Academy Kanpur!\nI would like to book a Free Demo Class:\n\n• Student Name: ${data.name}\n• Phone: ${data.phone}\n• Course: ${data.course}\n• Preferred Mode: ${data.mode}${data.notes ? `\n• Notes: ${data.notes}` : ''}`;
+      window.open(`https://wa.me/919454933916?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Clipboard Utility (iframe-safe)
+    function copyToClipboard(text, message) {
+      const area = document.createElement('textarea');
+      area.value = text;
+      document.body.appendChild(area);
+      area.select();
+      try {
+        document.execCommand('copy');
+        showToast(message);
+      } catch (e) {
+        showToast('Copied!');
+      }
+      document.body.removeChild(area);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-text').textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3200);
+    }
+
+    // Initialize on load
+    window.onload = function() {
+      loadGalleryFromStorage();
+      renderGallery();
+      updateCalculator();
+    };
+  </script>
+</body>
+</html>
